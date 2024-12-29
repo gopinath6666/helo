@@ -6,5 +6,5 @@ RUN wget (url) -o /tmp/tomcat.tar.gz
 RUN cd /tmp && tar -xvzf tomcat.tar.gz
 RUN rm -rf /tmp/tomcat.tar.gz
 RUN rm -rf /tmp/apache
-EXPOSE 80
+EXPOSE 8080
 CMD ["usr/local/tomcat/bin/catalina.sh", "run"]
